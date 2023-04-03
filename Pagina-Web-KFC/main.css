@@ -1,0 +1,911 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: relative;
+    background: linear-gradient(90deg, #f94626, #f02328);
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header nav{
+    /*border: 1px solid white;*/
+    width: 63%;
+    height: 13%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    width: 110px;
+    height: 40px;
+    filter: brightness(9.5);
+    cursor: pointer;
+}
+
+header nav .ulUser{
+    display: flex;
+    align-items: center;
+}
+header .ulUser ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .ulUser ul li{
+    list-style: none;
+    padding: 5px 0 5px 25px;
+}
+header .ulUser ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;   
+}
+header .ulUser ul li a:hover{
+    color: #ffe91e;
+}
+
+header .user{
+    display: flex;
+    align-items: center;
+}
+header .user li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+header .user li a{
+    
+    position: relative;
+    transition: all .3s ease-in-out;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+header .user li a:hover{
+    color: #ffe91e;
+}
+header .user li a img{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 3px 4px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .5);
+    transition: all .3s ease-in-out;
+}
+
+header .user li a:hover img{
+    filter: hue-rotate(360deg);
+}
+
+header .user li a .cartCount{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #000;
+    top: -20px;
+    right: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+/*Section*/
+
+header section{
+    
+    width: 63%;
+    height: 87%;
+    margin: auto;
+    display: flex;
+}
+header section .leftContentSide, .rightContentSide{
+    
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    font-weight: 900;
+}
+header section .leftContentSide h1{
+    font-size: 35px;
+    margin-top: 70px;
+    line-height: 40px;
+}
+header section .leftContentSide p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+header section .leftContentSide button{
+    padding: 8px 50px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    outline: none;
+    transition: all .6s ease-in-out;
+    box-shadow: 0 5px 12px rgb(0, 0, 0, .2);
+}
+header section .leftContentSide button:hover{
+    box-shadow: inset 5px 5px 5px rgb(0, 0, 0, .4);
+}
+header section .leftContentSide .dots{
+    display: flex;
+    margin-top: 50px;
+}
+header section .leftContentSide .dots h6{
+    width: 15px;
+    height: 6px;
+    border-radius: 10px;
+    background: #fa9b93;
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+}
+
+header section .rightContentSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .desing .circle1{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #f73b3b;
+    z-index: -1;
+    border-radius: 50%;
+    top: 100px;
+    left: 15%;
+}
+header .desing .ring1{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: none;
+    z-index: -1;
+    border-radius: 50%;
+    border: 20px solid #fa5731;
+    top: -55px;
+    left: 45%;
+}
+header .desing .ring2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: none;
+    border: 70px solid #fa5731 ;
+    border-radius: 50%;
+    top: 17%;
+    bottom: -35px;
+    left: -17%;
+    z-index: -1;
+}
+header .desing .ring3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 70px solid #e5100d;
+    border-radius: 50%;
+    top: -23%;
+    right: -10%;
+    z-index: 1;
+}
+header .desing .redBox{
+    position: absolute;
+    width: 500px;
+    height: 900px;
+    background: linear-gradient(0deg, #d91213, #f82724);
+    z-index: -1;
+    border-radius: 70px;
+    top: -300px;
+    transform: rotate(50deg);
+    left: 70%;
+}
+
+
+/*--------------MENU-----------*/
+
+.menu{
+    position: relative;
+    width: 65%;
+    height: 148px;
+    
+    margin: auto;
+}
+.menu .menuSec{
+    width: 92%;
+    height: 100%;
+   
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.menu .menuSec::-webkit-scrollbar{
+    display: none;
+}
+
+
+.menu .menuSec .card{
+    min-width: 115px;
+    height: 92%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #282727;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+}
+.menu .menuSec .card img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.menu .menuSec .card img:hover{
+    transform: translateY(-5px);
+}
+.menu .menuSec .border{
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    background: #f02328;
+    width: 115px;
+    height: 5px;
+    border-radius: 30px;
+}
+.menu .leftArrow, .rightArrow{
+    position: absolute;
+    bottom: 33%;
+    left: -1%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+.menu .rightArrow{
+    left: 96%;
+    transform: rotate(180deg);
+}
+.menu .menuButton{
+    position: absolute;
+    top: -19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45%;
+    z-index: 99999;
+    padding: 5px 25px;
+    background: #ffc41e;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 12px #fc826f;
+    transition: all .3s ease-in-out;
+}
+.menu .menuButton:hover{
+    background: #f0694b;
+    box-shadow: none;
+}
+
+
+
+
+.containerBox{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(0deg, #f2dfd1, rgb(243,210,183));
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.containerBox .ring4{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 70px solid rgb(105, 105, 105, .1) ;
+    border-radius: 50%;
+    top: 17%;
+    bottom: -35px;
+    left: -12%;
+    z-index: -1;
+}
+.containerBox .ring5{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 150px solid rgb(105, 105, 105, .1) ;
+    border-radius: 50%;
+    top: -23%;
+    right: -10%;
+    z-index: 1;
+}
+
+.containerBox .cardBox{
+    position: relative;
+   
+    width: 70%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 12px;
+}
+.containerBox .cardBox .cardA, .cardB{
+    width: 340px;
+    height: 205px;
+    background: #fff;
+    /*margin: 15px 20px 20px 0;*/
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerBox .cardBox .cardB{
+    width: 515px;
+}
+
+.containerBox .cardBox .cardA img, .cardB img{
+    position: absolute;
+    height: 95%;
+    width: 60%;
+    right: 0;
+    
+}
+
+.containerBox .cardBox .card2{
+    background: #fc2e46;
+    color: #fff;
+}
+
+.containerBox .cardBox .textBox{
+    width: 40%;
+    left: 0;
+    height: 85%;
+   
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 13px;
+}
+.containerBox .cardBox .textBox h4{
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.containerBox .cardBox .textBox h6{
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.containerBox .cardBox .textBox .price{
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #f02328;
+}
+.containerBox .cardBox .textBox .price2{
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+.containerBox .cardBox  .dots{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    margin: 15px 0px; 
+    bottom: 15px;
+    left: 15px;
+}
+.containerBox .cardBox  .dots h4{
+    width: 15px;
+    height: 5px;
+    background: #ffc41e;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.containerBox .cardBox .cardB .textBoxB{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-transform: uppercase;
+    flex-direction: column;
+   
+    height: 100%;
+    width: 40%;
+    padding: 20px 15px;
+}
+.containerBox .cardBox .cardB .textBoxB a{
+    text-decoration: none;
+    
+    background: #f42c32;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+.containerBox .cardBox .cardB .textBoxB a:hover{
+    background: #fb808b;
+    
+}
+
+
+
+
+
+
+
+.appBox{
+    
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(0deg, rgb(243, 210, 183), #f2dfd1);
+}
+.appBox .appBox1{
+
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #ffb536;
+    display: flex;
+    justify-content: center;
+}
+
+.appBox .appBox1 .appImg, .appContent{
+   
+    position: relative;
+    width: 35%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.appBox .appBox1 .appImg img{
+    position: relative;
+    height: 120%;
+    top: -25px;
+    filter: drop-shadow(-5px 8px 5px rgb(48,48,48,.4));
+}
+
+.appBox .appBox1 .appContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 35px;
+}
+.appBox .appBox1 .appContent p{
+    
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.appBox .appBox1 .appContent .appContentImg{
+    display: flex;
+    /*justify-content: space-evenly;*/
+}
+.appBox .appBox1 .appContent .appContentImg img{
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    filter: drop-shadow(-3px 5px 5px rgb(48,48,48,.5));
+
+}
+.appBox .appBox1 .appContent .appContentImg img:hover{
+    transform: translateY(-5px);
+    filter: none;
+}
+
+
+
+
+
+.socialContainer{
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(0deg, #f2dfd1, rgb(243,210,183));
+    overflow: hidden;
+    display: flex;
+}
+.socialContainer::before{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, rgb(0,0,0,.1), #f2ddce);
+    border-radius: 50%;
+    bottom: 0;
+    left: -50px;
+}
+.socialContainer::after{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    border: 40px solid rgb(0, 0, 0, .1);
+    border-radius: 50%;
+    right: -8%;
+    top: -35%;
+}
+
+.socialContainer .social{
+
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.socialContainer .social .socialBox, .socialVideoBox{
+  
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.socialContainer .social .socialBox::before{
+    position: absolute;
+    content: 'SOCIAL';
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0, .1);
+    font-weight: bold;
+    font-size: 40px;
+    top: -45px;
+}
+.socialContainer .social .socialVideoBox::before{
+    position: absolute;
+    content: 'VIDEO';
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0, .1);
+    font-weight: bold;
+    font-size: 40px; 
+    top: -45px;
+    margin-left: 50px;
+}
+.socialContainer .social .socialBox .twitter{
+    position: relative;
+    width: 285px;
+    height: 90px;
+    background: #fff;
+    border-radius: 20px 10px 10px 10px;
+    padding-left: 45px;
+    margin-right: 0px;
+    
+}
+.socialContainer .social .socialBox .twitter img{
+    position: absolute;
+    width: 35px;
+    left: 0;
+    padding: 8px;
+    border-radius: 50%;
+    background: #21b6fc;
+    box-shadow: 0 8px 8px #d0edfa, 8px 0 8px #d0edfa;
+}
+.socialContainer .social .socialBox .twitter h3{
+    font-size: 17px;
+    padding: 10px 0 5px 0;
+}
+.socialContainer .social .socialBox .twitter p{
+    font-size: 12px;
+    padding-right: 15px;
+    color: #585858;
+}
+.socialContainer .social .socialBox .twitter span{
+    color: #50bffb;
+}
+
+.socialContainer .social .socialBox .meta{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    border-radius: 20px 10px 10px 10px;
+    box-shadow: 0 7px 12px #ffdfbd;
+    /*border: 1px solid;*/
+}
+
+.socialContainer .social .socialBox .meta img{
+    position: absolute;
+    width: 35px;
+    padding: 8px;
+    background: #2e86de;
+    border-radius: 50%;
+    box-shadow: 0 8px 8px #d0edfa, 8px 0 8px #d0edfa;
+    left: 0;
+}
+
+.socialContainer .social .socialBox .meta .insta{
+    background: #ee5353;
+    box-shadow: 0 8px 8px #fccccc, 8px 0 8px #fccccc;
+    
+}
+.socialContainer .social .socialBox .meta h3{
+    font-size: 17px;
+    padding: 8px 0 10px 50px;
+    top: 0;
+}
+.socialContainer .social .socialBox .meta p{
+    font-size: 12px;
+    padding: 10px 10px 10px 25px;
+    color: #585858;
+}
+.socialContainer .social .socialBox .meta span{
+    color: #50bffb;
+}
+.socialContainer .social .socialBox .meta .chicken{
+    width: 120px;
+    height: 110px;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 45px 10px 0 25px;
+    box-shadow: unset;
+}
+.socialContainer .social .socialBox .meta .textInsta{
+    position: absolute;
+    bottom: 25px;
+    width: 110px;
+    height: 30px;
+    background: rgb(185, 185, 185, .1);
+    backdrop-filter: blur(5px);
+    left: 25px;
+    padding: 0px;
+}
+.socialContainer .social .socialBox .meta .textInsta p{
+    color: #fff;
+   text-align: center;
+   font-size: 10px;
+   padding: 0;
+   font-weight: 600;
+}
+.socialContainer .social .socialBox .meta .textInsta span{
+    color: #fffc36;
+}
+
+
+
+
+/*Video*/
+
+
+.socialContainer .social .socialVideoBox .video{
+    position: relative;
+    width: 450px;
+    height: 275px;
+    border: 8px solid #fff;
+    margin-left: 10px;
+    background: #000;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialContainer .social .socialVideoBox .video .imgVdeo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.socialContainer .social .socialVideoBox .video .playVideo, .pauseVideo{
+    position: absolute; 
+    cursor: pointer;
+}
+.socialContainer .social .socialVideoBox .video .pauseVideo{
+    display: none;
+}
+
+
+
+
+
+/* Address*/
+address{
+   
+    width: 100%;
+    height: 60px;
+    background: #f02328;
+}
+address .containerAddress{
+    
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+address .containerAddress .kfcAddress{
+    
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+}
+
+address .containerAddress .kfcAddress .logoKFC{
+    width: 60px;
+    height: 25px;
+    filter: brightness(9.5);
+}
+address .containerAddress .kfcAddress .wtsIcon{
+    display: flex;
+    color: #fff;
+}
+address .containerAddress .kfcAddress .wtsIcon p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+address .containerAddress .kfcAddress .wtsIcon img{
+    width: 30px;
+    height: 30px;
+}
+address .containerAddress .kfcAddress .storeIcon{
+    display: flex;
+    color: #fff;
+}
+address .containerAddress .kfcAddress .storeIcon p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+address .containerAddress .kfcAddress .storeIcon img{
+    width: 30px;
+    height: 30px;
+}
+
+address .containerAddress .redSocial{
+   
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+    left: 0;
+}
+address .containerAddress .redSocial img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: all .3s ease-in-out;
+}
+address .containerAddress .redSocial .faceLogo:hover{
+    transform: rotate(360deg);
+    background: #2e86de;
+}
+address .containerAddress .redSocial .twiLogo:hover{
+    transform: rotate(360deg);
+    background: #50bffb;
+}
+address .containerAddress .redSocial .ytLogo:hover{
+    transform: rotate(360deg);
+    background: #262524;
+}
+address .containerAddress .redSocial .insLogo:hover{
+    transform: rotate(360deg);
+    background: #e73fe7;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background: #1f2329;
+    z-index: 2;
+    display: flex;
+
+}
+
+footer::before{
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 200px;
+    background: url(./img/kfc_brand.png) no-repeat;
+    bottom: 0;
+    right: 10%;
+    z-index: -1;
+}
+
+footer .links{
+    
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+footer .links .linkItem{
+    
+    width: 16%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer .links .linkItem .titleP{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+footer .links .linkItem .subItems li:nth-child(1){
+    padding-top: 13px;
+}
+
+footer .links .linkItem li{
+    list-style-type: none;
+    color: #e4e4e4;
+    padding: 5px 0px;
+
+    font-size: 15px;
+}
+footer .links .linkItem li a{
+    text-decoration: none;
+    color: rgb(142, 140, 140);
+}
+footer .links .linkItem li a:hover{
+    color: #e4e4e4;
+}
+footer .links .linkItem .subItems{
+    width: 80%;
+}
+
