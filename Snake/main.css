@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.details{
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.board{
+    border: 1px solid #adc;
+    height: 100%;
+    width: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.board .food{
+    background: #ff003d;
+}
+
+.board .head{
+    background: #60cbff;
+    border: 1px solid white;
+}
