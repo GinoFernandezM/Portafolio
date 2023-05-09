@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+    <header> 
+        <h1>Piedra , papel o tijera</h1>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 5 puntos gana
+        </p>
+        <div class="marcador">
+            <p class="nombre jugador">Jugador</p>
+            <p class="puntos">
+                <span class="puntoJugador" id="puntosJugador">0</span>
+                <span>-</span>
+                <span class="puntoComputadora" id="puntosPC">0</span>
+            </p>
+            <p class="nombre computadora">Computadora</p>
+        </div>
+        <div class="elegir-armas">
+            <h3>Elije tu arma para el proximo turno</h3>
+            <div class="armas">
+                <button class="arma" id="piedra 🪨">🪨</button>
+                <button class="arma" id="papel 📄">📄</button>
+                <button class="arma" id="tijera ✂️">✂️</button>
+            </div>
+        </div>
+        <div class="resultado disabled">
+            <p class="eleccion">Usaste <span class="eleccion-jugador">papel📄</span>
+            <br> y la computadora <span class="eleccion-computadora">piedra🪨</span>
+            </p>
+            <p id="ganastePunto">!Ganaste un punto!</p>
+        </div> 
+        <button class="reinicio disabled">Reiniciar juego</button>
+
+    </main>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

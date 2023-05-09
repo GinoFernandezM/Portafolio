@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root{
+    --clr-gold: #DCC48E;
+    --clr-beige: #EAEFD3;
+    --clr-purple: #27233A;
+}
+
+body{
+    background-color: var(--clr-purple);
+    color: var(--clr-beige);
+}
+
+header{
+    background-color: var(--clr-beige);
+    color: var(--clr-purple);
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
+}
+header h1{
+    padding-top: .6rem;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.marcador{
+    background-color: var(--clr-gold);
+    padding: 1rem 2rem;
+    display: flex;
+    position: relative;
+    margin: 2rem 1rem;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.nombre{
+    position: absolute;
+    background-color: var(--clr-purple);
+    border-radius: .5rem;
+    border: 2px solid var(--clr-gold);
+    padding: .25rem;   
+}
+
+.jugador{
+    right:85%;
+}
+.computadora{
+    left: 85%;
+}
+.puntos{
+    color: var(--clr-purple);
+    font-size: 1.5rem;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    
+}
+.arma{
+    background-color: var(--clr-beige);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+.resultado{
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    font-size: .9rem;
+    
+}
+.eleccion-jugador{
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+    padding: .06rem;
+    border-radius: .25rem;
+}
+.eleccion-computadora{
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+    padding: .06rem;
+    border-radius: .25rem;
+}
+
+.reinicio{
+    background-color: var(--clr-beige);
+    padding: .4rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.disabled{
+    display: none;
+}
