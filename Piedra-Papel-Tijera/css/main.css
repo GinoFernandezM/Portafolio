@@ -14,12 +14,12 @@
 }
 
 body{
-    background-color: var(--clr-purple);
+    background-color: #111727;
     color: var(--clr-beige);
 }
 
 header{
-    background-color: var(--clr-beige);
+    background-color: var(--clr-gold);
     color: var(--clr-purple);
     display: flex;
     justify-content: center;

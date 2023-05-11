@@ -6,6 +6,7 @@
 }
 
 body{
+    background: #111727;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +15,13 @@ body{
 .wrapper{
     width: 65vmin;
     height: 70vmin;
-    background: #293447;
+    background: #474e53;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
 }
 .details{
-    color: #b8c6dc;
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 20px 27px;
@@ -31,7 +32,7 @@ body{
     border: 1px solid #adc;
     height: 100%;
     width: 100%;
-    background: #212837;
+    background: #67ce69;
     display: grid;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
@@ -41,6 +42,6 @@ body{
 }
 
 .board .head{
-    background: #60cbff;
+    background: #000;
     border: 1px solid white;
 }

@@ -6,8 +6,8 @@
 
 body{
     height: 100vh;
-    border: 5px solid greenyellow;
-    background: #584040;
+    
+    background: #111727;
     display: flex;
     align-items: center;
 }
